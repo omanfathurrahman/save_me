@@ -1,21 +1,5 @@
 import 'package:june/june.dart';
 
-// abstract class RegisterDataInterface {
-//   String email;
-//   String nama;
-//   String jenisKelamin;
-//   String tanggalLahir;
-//   String noTelp;
-
-//   RegisterDataInterface({
-//     required this.email,
-//     required this.nama,
-//     required this.jenisKelamin,
-//     required this.tanggalLahir,
-//     required this.noTelp,
-//   });
-// }
-
 class RegisterDataVM extends JuneState {
   String email = '';
   String nama = '';

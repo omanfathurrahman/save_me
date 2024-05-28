@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:save_me/main.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,12 +14,14 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
-    Timer(const Duration(seconds: 3), () {
-      context.goNamed('login');
-    });
+    if (supabase.auth.currentSession != null) {
+      if (!mounted) return;
+      Timer(const Duration(seconds: 2), () {
+        context.replaceNamed('home');
+      });
+    }
   }
 
   @override
@@ -31,8 +34,14 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Splash Screen', style: TextStyle(fontSize: 30, color: Colors.white),),
-              Text('yeah', style: TextStyle(fontSize: 30, color: Colors.white),),
+              Text(
+                'Splash Screen',
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
+              Text(
+                'yeah',
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
             ],
           ),
         ),

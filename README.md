@@ -11,13 +11,13 @@
 
 ### Todo
 - User
-	- Login - Register ✅
-	- HomeScreen => list berita✅
-	- Webinar => mirip kyk aplikasi tiket.com, user bisa daftar✅
-	- PostMe => mirip kyk twitter, posting tweet
-	- Deeptalk => mirip wa, chat antara user sama admin
+	- [x] Login - Register 
+	- [x] HomeScreen => list berita
+	- [x] Webinar => mirip kyk aplikasi tiket.com, user bisa daftar
+	- [ ] PostMe => mirip kyk twitter, posting tweet
+	- [ ] Deeptalk => mirip wa, chat antara user sama admin
 - Admin
-	- Login
-	- Buat berita
-	- Buat event webinar
-	- balas chat deeptalk user
+	- [ ] Login
+	- [ ] Buat berita
+	- [ ] Buat event webinar
+	- [ ] balas chat deeptalk user
